@@ -32,7 +32,7 @@ class Router:
     def replace(self, url=None):
         xbmcplugin.endOfDirectory(self.handle, cacheToDisc=False)
         url = self._history.current() if url is None else url
-        logger.debug('Replacing url {} with {}'.format(self._history.current(), url))
+        logger.debug('Replacing url {0} with {1}'.format(self._history.current(), url))
         replace_plugin_url(url)
 
     def add_route(self, *args, **kwargs):

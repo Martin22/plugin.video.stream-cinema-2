@@ -104,9 +104,9 @@ class SETTINGS:
 
 
 class STRINGS:
-    STREAM_TITLE_BRACKETS = '[{}]'
-    SEASON_TITLE = '{} {}'
-    BOLD = '[B]{}[/B]'
+    STREAM_TITLE_BRACKETS = '[{0}]'
+    SEASON_TITLE = '{0} {1}'
+    BOLD = '[B]{0}[/B]'
     TABLE_SPACES = '  '
 
 

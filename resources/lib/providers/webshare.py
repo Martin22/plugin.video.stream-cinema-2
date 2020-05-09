@@ -71,7 +71,7 @@ class Webshare:
             'Referer': 'https://webshare.cz/',
         })
 
-        response = requests.post('https://webshare.cz/api{}'.format(path), data=data, headers=headers)
+        response = requests.post('https://webshare.cz/api{0}'.format(path), data=data, headers=headers)
         return response.content
 
     def _get_salt(self):

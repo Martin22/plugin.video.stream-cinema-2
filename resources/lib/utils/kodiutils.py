@@ -32,7 +32,7 @@ def get_plugin_url():
 
 def get_plugin_base_url_with_path(path):
     sanitized_plugin_path = path.strip('/')
-    return '{}/{}'.format(get_plugin_base_url(), sanitized_plugin_path)
+    return '{0}/{1}'.format(get_plugin_base_url(), sanitized_plugin_path)
 
 
 def router_url_for(router, *args, **kwargs):
@@ -90,7 +90,7 @@ def show_input(heading, input_type=xbmcgui.INPUT_ALPHANUM):
 
 
 def get_plugin_base_url():
-    return '{}://{}'.format(PROTOCOL.PLUGIN, get_info('id'))
+    return '{0}://{1}'.format(PROTOCOL.PLUGIN, get_info('id'))
 
 
 def get_info(info):
@@ -185,7 +185,7 @@ def append_list_items_to_nested_list_items(_list, list_to_append):
 
 
 def user_agent():
-    return xbmc.getUserAgent()
+    return 'Kodi/16.1 (Patched; Intel Something) App_Bitness/64 Version/17.6-Git:20171114-a9a7a20'
 
 
 def common_headers():

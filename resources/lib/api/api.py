@@ -29,7 +29,7 @@ class API(object):
         sanitized_api_path = self._api_url.strip('/')
         sanitized_url_path = url_path.strip('/api')
         return requests.get(
-            '{}/{}/'.format(sanitized_api_path, sanitized_url_path),
+            '{0}/{1}/'.format(sanitized_api_path, sanitized_url_path),
             headers=common_headers(),
         )
 
