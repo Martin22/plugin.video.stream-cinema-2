@@ -106,7 +106,7 @@ def set_settings(setting, value):
 
 
 def get_setting_as_bool(setting):
-    return ADDON.getSettingBool(setting)
+    return ADDON.getSetting(setting)
 
 
 def get_setting_as_float(setting):

@@ -2,6 +2,7 @@ from resources.lib.api.api import API
 from resources.lib.api.cached_api import CachedAPI
 from resources.lib.const import SETTINGS, URL
 from resources.lib.provider import provider
+from resources.lib.providers.webshare import Webshare
 from resources.lib.router import Router
 from resources.lib.settings import settings
 from resources.lib.storage.storage import storage
@@ -11,7 +12,7 @@ from resources.lib.utils.kodiutils import get_info
 class Defaults:
     @staticmethod
     def provider():
-        return provider(settings[SETTINGS.PROVIDER_USERNAME],
+        return Webshare(settings[SETTINGS.PROVIDER_USERNAME],
                         settings[SETTINGS.PROVIDER_PASSWORD],
                         settings[SETTINGS.PROVIDER_TOKEN])
 
