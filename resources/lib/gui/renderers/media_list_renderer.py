@@ -79,7 +79,7 @@ class MediaListRenderer(Renderer):
 
     @staticmethod
     def next_page_title(page, page_count):
-        return '{} ({}/{})'.format(get_string(30203), page, page_count)
+        return '{0} ({1}/{2})'.format(get_string(30203), page, page_count)
 
     def select_stream(self, media_id, streams):
         self.storage[STORAGE.SELECTED_MEDIA_ID] = media_id

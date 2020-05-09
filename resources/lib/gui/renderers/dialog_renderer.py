@@ -25,7 +25,7 @@ class DialogRenderer:
             # Fix audio string that begins with the comma.
             audio_info = []
             for audio in stream.get('audio'):
-                audio_info.append('[I][{} {} {}][/I]'.format(audio.get('codec'), format(audio.get('channels'), '.1f'), audio.get('language')))
+                audio_info.append('[I][{0} {1} {2}][/I]'.format(audio.get('codec'), format(audio.get('channels'), '.1f'), audio.get('language')))
             audio_info_list.append(' '.join(audio_info))
             quality = STRINGS.STREAM_TITLE_BRACKETS.format(stream.get('quality'))
             size = STRINGS.BOLD.format(convert_size(stream.get('size')))

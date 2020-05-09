@@ -158,7 +158,7 @@ class StreamCinema:
 
     @staticmethod
     def send_service_message(service_name, service_event):
-        logger.debug('Sending service message {}: {}'.format(service_name, service_event))
+        logger.debug('Sending service message {0}: {1}'.format(service_name, service_event))
         service_storage = storage.get(STORAGE.SERVICE)
         service_storage[service_name] = service_event
         storage[STORAGE.SERVICE] = service_storage
